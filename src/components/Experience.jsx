@@ -40,8 +40,8 @@ const techs = [
 ]
 
 const Techbox = ({tech}) => (
-    <div className="bg-backgroundthird inset-shadow-md 
-    rounded-md p-4 mt-4 aspect-square w-24 lg:w-28
+    <div className="bg-backgroundthird inset-shadow-lg 
+    rounded-md p-4 mt-4 aspect-square w-20 lg:w-24
     flex flex-col justify-around items-center">
         <img 
             src={tech.image}
