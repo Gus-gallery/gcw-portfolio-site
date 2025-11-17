@@ -5,11 +5,11 @@ const Hero = () => {
     <section id="hero">
       <div>
         <div className="container flex flex-col p-4 mt-20 text-left">
-          <h1 className="text-2xl font-light text-primary">
+          <h1 className="text-2xl font-semibold text-primary">
             Gustav Campbell Werdelin
           </h1>
 
-          <p className="text-md font-light text-secondary">
+          <p className="text-md font-regular text-secondary">
             Former gallerist with a bachelor's degree in art history. <br />
             Loves functionalist design and minimalism in art. <br />
             Beginner-programmer based in Copenhagen, Denmark.

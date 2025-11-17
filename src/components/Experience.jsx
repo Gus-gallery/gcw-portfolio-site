@@ -46,7 +46,7 @@ const Techbox = ({tech}) => (
         <img 
             src={tech.image}
             alt={tech.name}
-            className="object-contain saturate-0 hover:saturate-100 transition-all ease-in-out duration-200"
+            className="object-contain saturate-20 hover:saturate-100 transition-all ease-in-out duration-200"
         />
     </div>
 )
@@ -56,8 +56,8 @@ const Experience = () => {
     return (
         <section id="experience">
             <div className="mt-12 p-4">
-                <h1 className="text-lg text-primary font-light">
-                    Programming experience:
+                <h1 className="text-lg text-primary font-regular">
+                    Programming experience
                 </h1>
                 <div className="container flex flex-row gap-4 
                 flex-nowrap snap-x snap-mandatory 

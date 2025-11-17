@@ -5,15 +5,15 @@ const Nav = () => {
   const sections = ["Experience", "Projects", "Education", "Work"]
 
   return (
-    <header>
-      <nav className="container flex flex-col h-screen w-fit bg-backgroundsecondary p-4 text-sm text-secondary font-light shadow-lg">
-        <h1 className="text-center">gcw.portfolio</h1>
+    <header className="fixed top-0 left-0 h-screen z-50">
+      <nav className="container flex flex-col min-h-screen w-26 md:w-fit bg-backgroundsecondary p-4 text-sm text-secondary font-regular shadow-lg">
+        <h1 className="text-center flex justify-center items-center">gcw.portfolio</h1>
 
-        <ul className="flex flex-col flex-1 justify-center items-center gap-8 lg:gap-12">
+        <ul className="flex flex-col flex-1 justify-center items-center gap-8 lg:gap-12 font-regular">
           {sections.map((section) => (
             <li 
               key={section}
-              className="text-primary opacity-60 cursor-pointer hover:opacity-100 duration-200 ease-in-out"
+              className="text-primary opacity-60 cursor-pointer hover:opacity-100 duration-200 p-2 ease-in-out"
             >
               {section}
             </li>
