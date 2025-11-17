@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <header>
       <nav className="container flex flex-col h-screen w-fit bg-backgroundsecondary p-4 text-sm text-secondary font-light shadow-lg">
-        <h1 className="text-center">gcw</h1>
+        <h1 className="text-center">gcw.portfolio</h1>
 
         <ul className="flex flex-col flex-1 justify-center items-center gap-8 lg:gap-12">
           {sections.map((section) => (

@@ -57,7 +57,7 @@ const Experience = () => {
         <section id="experience">
             <div className="mt-12 p-4">
                 <h1 className="text-lg text-primary font-light">
-                    Experience with:
+                    Programming experience:
                 </h1>
                 <div className="container flex flex-row gap-4 
                 flex-nowrap snap-x snap-mandatory 
