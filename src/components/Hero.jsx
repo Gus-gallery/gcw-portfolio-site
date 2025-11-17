@@ -4,8 +4,8 @@ const Hero = () => {
   return (
     <section id="hero">
       <div>
-        <div className="container mx-auto flex flex-col p-4 mt-20 text-left">
-          <h1 className="text-xl font-light text-primary">
+        <div className="container flex flex-col p-4 mt-20 text-left">
+          <h1 className="text-2xl font-light text-primary">
             Gustav Campbell Werdelin
           </h1>
 
@@ -16,7 +16,7 @@ const Hero = () => {
           </p>
         </div>
 
-        
+
       </div>
     </section>
   )

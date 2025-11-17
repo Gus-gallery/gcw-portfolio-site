@@ -41,12 +41,12 @@ const techs = [
 
 const Techbox = ({tech}) => (
     <div className="bg-backgroundthird inset-shadow-md 
-    rounded-md p-4 mt-4 w-sm h-sm flex flex-col 
-    justify-around items-center">
+    rounded-md p-4 mt-4 aspect-square w-24 lg:w-28
+    flex flex-col justify-around items-center">
         <img 
             src={tech.image}
             alt={tech.name}
-            className="object-cover saturate-0 hover:saturate-100 transition-all ease-in-out duration-200"
+            className="object-contain saturate-0 hover:saturate-100 transition-all ease-in-out duration-200"
         />
     </div>
 )
@@ -54,17 +54,22 @@ const Techbox = ({tech}) => (
 
 const Experience = () => {
     return (
-        <div className="mt-12 p-4">
-            <h1 className="text-lg text-primary font-light">
-                Experience with:
-            </h1>
-            <div className="container flex flex-row gap-4">
-                {techs.map(tech => (
-                    <Techbox key={tech.id} tech={tech} />
-                ))}
-                <div className="w-auto" aria-hidden="true" />
+        <section id="experience">
+            <div className="mt-12 p-4">
+                <h1 className="text-lg text-primary font-light">
+                    Experience with:
+                </h1>
+                <div className="container flex flex-row gap-4 
+                flex-nowrap snap-x snap-mandatory 
+                scroll-smooth overflow-x-auto lg:overflow-visible
+                lg:snap-none">
+                    {techs.map(tech => (
+                        <Techbox key={tech.id} className="snap-start" tech={tech} />
+                    ))}
+                    <div className="w-sm lg:w-auto" aria-hidden="true" />
+                </div>
             </div>
-        </div>
+        </section>
     )
 }
 
