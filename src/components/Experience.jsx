@@ -40,7 +40,7 @@ const techs = [
 ]
 
 const Techbox = ({tech}) => (
-    <div className="bg-backgroundthird inset-shadow-lg 
+    <div className="bg-backgroundthird inset-shadow-xl 
     rounded-md p-4 mt-4 aspect-square w-20 lg:w-24
     flex flex-col justify-around items-center">
         <img 
@@ -57,7 +57,7 @@ const Experience = () => {
         <section id="experience">
             <div className="mt-12 p-4">
                 <h1 className="text-lg text-primary font-regular">
-                    Programming experience
+                    Programming Experience
                 </h1>
                 <div className="container flex flex-row gap-4 
                 flex-nowrap snap-x snap-mandatory 

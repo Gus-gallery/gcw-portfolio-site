@@ -12,7 +12,7 @@ const Hero = () => {
           <p className="text-md font-regular text-secondary">
             Former gallerist with a bachelor's degree in art history. <br />
             Loves functionalist design and minimalism in art. <br />
-            Beginner-programmer based in Copenhagen, Denmark.
+            Beginner-programmer and web-developer based in Copenhagen, Denmark.
           </p>
         </div>
 
