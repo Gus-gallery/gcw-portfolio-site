@@ -1,4 +1,5 @@
 import React from 'react'
+import Socials from './Socials'
 
 const Nav = () => {
 
@@ -9,7 +10,7 @@ const Nav = () => {
       <nav className="container flex flex-col min-h-screen w-26 md:w-fit bg-backgroundsecondary p-4 text-sm text-secondary font-regular shadow-lg">
         <h1 className="text-center flex justify-center items-center">gcw.portfolio</h1>
 
-        <ul className="flex flex-col flex-1 justify-center items-center gap-8 lg:gap-12 font-regular">
+        <ul className="flex flex-col flex-1 justify-center items-center gap-4 lg:gap-8 font-regular">
           {sections.map((section) => (
             <li 
               key={section}
@@ -19,6 +20,7 @@ const Nav = () => {
             </li>
           ))}
         </ul>
+        <Socials />
       </nav>
     </header>
   )

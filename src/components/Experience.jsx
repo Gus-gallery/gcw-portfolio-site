@@ -46,7 +46,7 @@ const Techbox = ({tech}) => (
         <img 
             src={tech.image}
             alt={tech.name}
-            className="object-contain saturate-20 hover:saturate-100 transition-all ease-in-out duration-200"
+            className="object-contain saturate-50 hover:saturate-100 transition-all ease-in-out duration-200"
         />
     </div>
 )
@@ -56,17 +56,17 @@ const Experience = () => {
     return (
         <section id="experience">
             <div className="mt-12 p-4">
-                <h1 className="text-lg text-primary font-regular">
+                <h1 className="text-lg text-primary font-medium">
                     Programming Experience
                 </h1>
                 <div className="container flex flex-row gap-4 
-                flex-nowrap snap-x snap-mandatory 
+                snap-x snap-mandatory 
                 scroll-smooth overflow-x-auto lg:overflow-visible
                 lg:snap-none">
                     {techs.map(tech => (
                         <Techbox key={tech.id} className="snap-start" tech={tech} />
                     ))}
-                    <div className="w-sm lg:w-auto" aria-hidden="true" />
+                    <div className="lg:w-auto" aria-hidden="true" />
                 </div>
             </div>
         </section>

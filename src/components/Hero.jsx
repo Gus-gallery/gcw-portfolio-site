@@ -5,7 +5,7 @@ const Hero = () => {
     <section id="hero">
       <div>
         <div className="container flex flex-col p-4 mt-20 text-left">
-          <h1 className="text-2xl font-semibold text-primary">
+          <h1 className="text-2xl font-bold text-primary">
             Gustav Campbell Werdelin
           </h1>
 
@@ -15,8 +15,6 @@ const Hero = () => {
             Beginner-programmer and web-developer based in Copenhagen, Denmark.
           </p>
         </div>
-
-
       </div>
     </section>
   )

@@ -52,7 +52,7 @@ const VideoCard = ({ videoSrc, link, title, description }) => {
         bg-backgroundthird 
         flex-none overflow-hidden 
         cursor-pointer flex flex-col justify-between
-        rounded-md saturate-20 hover:saturate-100"
+        rounded-md"
     >
       <div 
         className="w-60 h-fit lg:w-100"
@@ -66,7 +66,7 @@ const VideoCard = ({ videoSrc, link, title, description }) => {
           playsInline
           className="object-contain w-60 lg:w-100"
         />
-        <div className="font-regular text-primary text-md p-4">
+        <div className="font-medium text-primary text-md p-4">
           {title}
         </div>
         <div className="font-light text-secondary text-sm p-4 -mt-8">
@@ -82,7 +82,7 @@ const Projects = () => {
   return (
     <section id="projects">
       <div className="mt-12 p-4">
-        <h1 className="text-lg mb-4 text-primary font-regular">Recent Projects</h1>
+        <h1 className="text-lg mb-4 text-primary font-medium">Recent Projects</h1>
 
         <div
           className="
