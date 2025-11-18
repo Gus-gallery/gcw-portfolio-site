@@ -9,15 +9,11 @@ const Education = () => {
             <p className="font-light text-secondary text-md">
                 Bachelors degree in art history from University of Copenhagen, 2022-2025.
             </p>
-        </div>
-        <div className="bg-backgroundsecondary rounded-md p-4 mt-4">
-            <h1 className="font-regular text-md text-primary">Digital Design:</h1>
+            <h1 className="font-regular text-md text-primary mt-4">Digital Design:</h1>
             <p className="font-light text-secondary text-md">
                 Course in Digital Design at University of Copenhagen during my bachelor's degree, 2025.
             </p>
-        </div>
-        <div className="bg-backgroundsecondary rounded-md p-4 mt-4">
-            <h1 className="font-regular text-md text-primary">Foundation year in business:</h1>
+            <h1 className="font-regular text-md text-primary mt-4 ">Foundation year in business:</h1>
             <p className="font-light text-secondary text-md">
                 Full year at Copenhagen Business School studying Economics and Psychology, 2021-2022.
             </p>

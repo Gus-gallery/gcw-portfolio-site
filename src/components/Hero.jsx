@@ -6,13 +6,14 @@ const Hero = () => {
       <div>
         <div className="container flex flex-col p-4 mt-20 text-left">
           <h1 className="text-2xl font-bold text-primary">
-            Gustav Campbell Werdelin
+            Hi, I'm <span className='text-gradient'>Gustav Campbell Werdelin</span>
           </h1>
 
           <p className="text-md font-regular text-secondary">
-            Former gallerist with a bachelor's degree in art history. <br />
-            Loves functionalist design and minimalism in art. <br />
-            Beginner-programmer and web-developer based in Copenhagen, Denmark.
+            I'm a former gallerist with a bachelor's degree in art history, 
+            who loves functionalist design and minimalism in art. <br />
+            Also, I do a bit of programmimg and web-development 
+            and I'm based in Copenhagen, Denmark.
           </p>
         </div>
       </div>

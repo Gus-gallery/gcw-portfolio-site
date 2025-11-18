@@ -28,6 +28,7 @@
 @theme {
   --color-primary: #DADADA;
   --color-secondary: #9D9D9D;
+  --color-third: #ddaf4b;
   --color-backgroundsecondary: #26292D;
   --color-backgroundthird: #131517;
   --font-regular: "Regular";
@@ -50,4 +51,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@utility text-gradient {
+  @apply bg-linear-to-r from-[#d25e2d] to-[#ddaf4b] bg-clip-text text-transparent;
 }

@@ -17,6 +17,12 @@ const Work = () => {
             </p>
         </div>
         <div className="bg-backgroundsecondary rounded-md p-4 mt-4">
+            <h1 className="font-regular text-md text-primary">gw.læder</h1>
+            <p className="font-light text-secondary text-md">
+                Created my own tiny leather goods brand, which makes bespoke made to order goods.
+            </p>
+        </div>
+        <div className="bg-backgroundsecondary rounded-md p-4 mt-4">
             <h1 className="font-regular text-md text-primary">Museum assistant</h1>
             <p className="font-light text-secondary text-md">
                 Museum assistant at 21st Century Museum of Contemporary Art in Kanazawa for the exhibition; Everyday Life - Signs of Awareness, 2017.
