@@ -7,14 +7,14 @@ const videos = [
     title: "gw.læder",
     videoSrc: "/projects/gwlæder.mp4",
     link: "https://gus-gallery.github.io/gwl-der_site/",
-    description: "Website for my personal leather goods business, made with React Vite."
+    description: "Website made for my personal bespoke leather goods business, made with React, Vite and Tailwind CSS."
   },
   {
     id: 2,
     title: "Nordfor Byggerådgivning",
     videoSrc: "/projects/nordfor.mp4",
     link: "https://gus-gallery.github.io/nordfor_byg/",
-    description: "Website created for a private construction consultant using React and Vite and Tailwind CSS."
+    description: "Website created for a private construction consultant using React, Vite and Tailwind CSS."
   },
   {
     id: 3,
@@ -55,7 +55,7 @@ const VideoCard = ({ videoSrc, link, title, description }) => {
         rounded-md"
     >
       <div 
-        className="w-60 h-fit lg:w-100"
+        className="w-80 h-fit lg:w-120"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -64,7 +64,7 @@ const VideoCard = ({ videoSrc, link, title, description }) => {
           src={videoSrc}
           muted
           playsInline
-          className="object-contain w-60 lg:w-100"
+          className="object-contain"
         />
         <div className="font-medium text-primary text-md p-4">
           {title}
