@@ -69,7 +69,7 @@ const VideoCard = ({ videoSrc, link, title, description }) => {
         <div className="font-medium text-primary text-md p-4">
           {title}
         </div>
-        <div className="font-light text-secondary text-sm p-4 -mt-8">
+        <div className="font-light text-secondary text-md p-4 -mt-8">
           {description}
         </div>
       </div>

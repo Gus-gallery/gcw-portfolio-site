@@ -6,7 +6,7 @@ const Hero = () => {
       <div>
         <div className="container flex flex-col p-4 mt-20 text-left">
           <h1 className="text-2xl font-bold text-primary">
-            Hi, I'm <span className='text-gradient'>Gustav Campbell Werdelin</span>
+            Hi, I'm <span className='text-gradient'>Gustav Werdelin</span>
           </h1>
 
           <p className="text-md font-regular text-secondary">
