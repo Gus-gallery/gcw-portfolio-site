@@ -3,7 +3,7 @@ import React from 'react'
 const Work = () => {
   return (
     <div className="p-4">
-        <h1 className="text-primary text-lg font-medium mt-12">Work</h1>
+        <h1 className="text-primary text-xl font-medium mt-12 -mb-2">Work</h1>
         <div className="bg-backgroundsecondary rounded-md p-4 mt-4">
             <h1 className="font-regular text-md text-primary">Co-founder of Minor Gallery</h1>
             <p className="font-light text-secondary text-md">

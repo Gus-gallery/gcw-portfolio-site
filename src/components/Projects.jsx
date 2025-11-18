@@ -82,7 +82,7 @@ const Projects = () => {
   return (
     <section id="projects">
       <div className="mt-12 p-4">
-        <h1 className="text-lg mb-4 text-primary font-medium">Recent Projects</h1>
+        <h1 className="text-xl mb-2 text-primary font-medium">Recent Projects</h1>
 
         <div
           className="

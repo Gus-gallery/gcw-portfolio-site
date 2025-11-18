@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Nav />
-      <div className="p-4 ml-22 md:ml-26">
+      <div className="p-4 ml-26 md:ml-30">
         <Hero />
         <Experience />
         <Projects />
