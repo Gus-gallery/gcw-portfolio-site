@@ -2,7 +2,7 @@ import React from 'react'
 
 const Socials = () => {
   return (
-    <div className="container flex flex-col items-center">
+    <div className="container flex flex-row items-center justify-end -mb-16">
         <div className="h-8 w-8 md:w-10 md:h-10 flex flex-col mt-2 justify-around items-center
         hover:scale-110 transition-all ease-in-out cursor-pointer">
           <img src="/socials/git.png" alt="Github" href="https://github.com/Gus-gallery"/>

@@ -20,7 +20,6 @@ const Nav = () => {
             </li>
           ))}
         </ul>
-        <Socials />
       </nav>
     </header>
   )
