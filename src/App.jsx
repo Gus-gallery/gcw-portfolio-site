@@ -12,8 +12,8 @@ function App() {
       <Nav />
       <div className="p-4 ml-26 md:ml-30">
         <Hero />
-        <Experience />
         <Projects />
+        <Experience />
         <Education />
         <Work />
       </div>

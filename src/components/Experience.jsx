@@ -41,12 +41,12 @@ const techs = [
 
 const Techbox = ({tech}) => (
     <div className="bg-backgroundthird inset-shadow-xl 
-    rounded-md p-4 mt-4 aspect-square w-20 lg:w-24
+    rounded-md p-2 lg:p-4 aspect-square w-20 lg:w-24
     flex flex-col justify-around items-center">
         <img 
             src={tech.image}
             alt={tech.name}
-            className="object-contain lg:saturate-50 hover:saturate-100 transition-all ease-in-out duration-200"
+            className="object-contain saturate-80 lg:saturate-50 hover:saturate-100 transition-all ease-in-out duration-200"
         />
     </div>
 )
@@ -56,7 +56,7 @@ const Experience = () => {
     return (
         <section id="experience">
             <div className="mt-12 p-4">
-                <h1 className="text-xl text-primary font-medium -mb-2">
+                <h1 className="text-xl text-primary font-medium mb-2">
                     Programming Experience
                 </h1>
                 <div className="container flex flex-row flex-wrap gap-4">

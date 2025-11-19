@@ -49,13 +49,13 @@ const VideoCard = ({ videoSrc, link, title, description }) => {
       target="_blank" 
       rel="noopener noreferrer"
       className="
-        bg-backgroundthird 
+        bg-backgroundthird
         flex-none overflow-hidden 
         cursor-pointer flex flex-col justify-between
         rounded-md"
     >
       <div 
-        className="w-80 h-fit lg:w-120"
+        className="w-88 h-fit lg:w-lg"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -91,7 +91,7 @@ const Projects = () => {
             snap-x snap-mandatory scroll-smooth"
         >
           {videos.map((v) => (
-            <div key={v.id} className="snap-start bg-backgroundthird rounded-md">
+            <div key={v.id} className="snap-start rounded-md">
               <VideoCard 
                 videoSrc={v.videoSrc}
                 link={v.link}

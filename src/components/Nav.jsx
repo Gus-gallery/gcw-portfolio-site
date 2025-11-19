@@ -3,7 +3,7 @@ import Socials from './Socials'
 
 const Nav = () => {
 
-  const sections = ["Experience", "Projects", "Education", "Work"]
+  const sections = ["Projects", "Experience", "Education", "Work"]
 
   return (
     <header className="fixed top-0 left-0 h-screen z-50">
