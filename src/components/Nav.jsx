@@ -3,7 +3,19 @@ import Socials from './Socials'
 
 const Nav = () => {
 
-  const sections = ["Projects", "Experience", "Education", "Work"]
+  const label = [
+    {name:"Projects", id:"projects"}, 
+    {name:"Experience", id:"experience"}, 
+    {name:"Education", id:"education"}, 
+    {name:"Work", id:"work"},
+  ];
+
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+  }
 
   return (
     <header className="fixed top-0 left-0 h-screen z-50">
@@ -11,12 +23,14 @@ const Nav = () => {
         <h1 className="text-center flex justify-center items-center">gcw.portfolio</h1>
 
         <ul className="flex flex-col flex-1 justify-center items-center gap-4 lg:gap-8 font-regular">
-          {sections.map((section) => (
+          {label.map((label) => (
             <li 
-              key={section}
+              key={label.id}
               className="text-primary opacity-60 cursor-pointer hover:opacity-100 duration-200 p-2 ease-in-out"
             >
-              {section}
+              <p onClick={() => handleScroll(label.id)}>
+                {label.name}
+              </p>
             </li>
           ))}
         </ul>
