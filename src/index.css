@@ -54,5 +54,5 @@
 }
 
 @utility text-gradient {
-  @apply bg-linear-to-r from-[#d22d77] to-[#4b8fdd] bg-clip-text text-transparent;
+  @apply bg-linear-to-r from-[#daa946] to-[#dd4b4b] bg-clip-text text-transparent;
 }

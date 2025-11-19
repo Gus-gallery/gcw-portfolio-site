@@ -6,7 +6,7 @@ const Socials = () => {
   return (
     <div className="relative flex items-center justify-end opacity-70">
 
-      <div className="container hidden md:flex flex-row items-center justify-end gap-2 -mt-2 -mb-16">
+      <div className="container hidden md:flex flex-row items-center justify-end gap-2 -mt-6 -mb-16">
           <div className="h-8 w-8 md:w-10 md:h-10 justify-around items-center
           hover:scale-110 transition-all ease-in-out cursor-pointer">
             <a href="https://github.com/Gus-gallery" target="_blank" rel="noopener noreferrer">

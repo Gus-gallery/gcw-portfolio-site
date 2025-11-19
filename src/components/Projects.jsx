@@ -81,7 +81,7 @@ const VideoCard = ({ videoSrc, link, title, description }) => {
 const Projects = () => {
   return (
     <section id="projects">
-      <div className="mt-12 p-4">
+      <div className="mt-12 p-2 ml-2">
         <h1 className="text-xl mb-2 text-primary font-medium">Recent Projects</h1>
 
         <div
