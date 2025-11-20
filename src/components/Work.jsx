@@ -35,8 +35,8 @@ const Work = () => {
                     </div>
                 </div>
                 {/*HØJRE SIDE*/}
-                <div className="flex flex-col justify-between mt-4 ml-4 gap-4">
-                    <div className="bg-backgroundthird rounded-md p-4 gradient-border flex flex-row justify-between">
+                <div className="flex flex-col justify-between mt-4 lg:ml-4 gap-4">
+                    <div className="bg-backgroundthird rounded-md p-4 gradient-border flex flex-col md:flex-row justify-between">
                         <div className="flex flex-col">
                             <h1 className="font-regular text-md text-primary">Other interests:</h1>
                             <p className="font-light text-secondary text-md">
