@@ -4,7 +4,6 @@ import Socials from './Socials'
 const Nav = () => {
 
   const label = [
-    {name:"Name", id:"hero"},
     {name:"Projects", id:"projects"}, 
     {name:"Experience", id:"experience"}, 
     {name:"Education", id:"education"}, 
@@ -21,7 +20,9 @@ const Nav = () => {
   return (
     <header className="fixed top-0 left-0 h-screen z-50">
       <nav className="container flex flex-col min-h-screen w-22 md:w-fit bg-backgroundsecondary p-4 text-xs md:text-sm text-secondary font-regular shadow-lg">
-        <h1 className="text-center flex justify-center items-center">gcw.portfolio</h1>
+        <h1 className="text-center flex justify-center items-center cursor-pointer"
+        onClick={() => {document.getElementById("top").scrollIntoView({ behavior: "smooth" })}}
+        >gcw.portfolio</h1>
 
         <ul className="flex flex-col flex-1 justify-center items-center gap-8 font-regular">
           {label.map((label) => (

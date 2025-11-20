@@ -5,7 +5,7 @@ const Education = () => {
     <section id="education">
         <div className="p-4">
             <h1 className="text-primary text-xl font-medium mt-12 -mb-2">Education</h1>
-            <div className="bg-backgroundsecondary rounded-md p-4 mt-4">
+            <div className="bg-backgroundsecondary rounded-md p-4 mt-4 gradient-border">
                 <h1 className="font-regular text-md text-primary">Bachelors degree</h1>
                 <p className="font-light text-secondary text-md">
                     Bachelors degree in art history from University of Copenhagen, 2022-2025.

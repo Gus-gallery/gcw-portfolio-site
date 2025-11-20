@@ -52,10 +52,10 @@ const VideoCard = ({ videoSrc, link, title, description }) => {
         bg-backgroundthird
         flex-none overflow-hidden 
         cursor-pointer flex flex-col justify-between
-        rounded-md"
+        rounded-md gradient-border"
     >
       <div 
-        className="w-88 h-fit lg:w-lg"
+        className="w-88 h-fit lg:w-xl"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >

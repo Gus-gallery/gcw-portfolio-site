@@ -4,7 +4,7 @@ const Socials = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="relative z-10 flex items-center justify-end opacity-70">
+    <section id="top" className="relative z-10 flex items-center justify-end opacity-70">
 
       <div className="container hidden md:flex flex-row items-center justify-end gap-2 -mt-6 -mb-16">
           <div className="h-8 w-8 md:w-10 md:h-10 justify-around items-center
@@ -67,7 +67,7 @@ const Socials = () => {
           </div>
         </div>
       )}
-    </div>
+    </section>
   )
 }
 
