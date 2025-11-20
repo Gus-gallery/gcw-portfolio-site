@@ -2,12 +2,12 @@ import React from 'react'
 
 const Work = () => {
   return (
-    <section id="work">
-        <div className="p-4">
+    <section id="work" className="container mx-auto p-4">
             <h1 className="text-primary text-xl font-medium mt-12 -mb-2">Former Work</h1>
             
-            <div className="flex flex-row">
-                <div className="lg:max-w-1/2">
+            <div className="grid grid-cols-1 lg:grid-cols-2">
+                {/*VENSTRE SIDE*/}
+                <div className="flex flex-col justify-between">
                     <div className="bg-backgroundsecondary rounded-md p-4 mt-4 gradient-border">
                         <h1 className="font-regular text-md text-primary">Co-founder of Minor Gallery</h1>
                         <p className="font-light text-secondary text-md">
@@ -34,8 +34,28 @@ const Work = () => {
                         </p>
                     </div>
                 </div>
+                {/*HØJRE SIDE*/}
+                <div className="flex flex-col justify-between mt-4 ml-4 gap-4">
+                    <div className="bg-backgroundthird rounded-md p-4 gradient-border flex flex-row justify-between">
+                        <div className="flex flex-col">
+                            <h1 className="font-regular text-md text-primary">Other interests:</h1>
+                            <p className="font-light text-secondary text-md">
+                                I enjoy fishing, climbing and being in nature with my friends. I enjoy learning new things, whether that be hobbies or things work related. <br />
+                                <br />
+                                Therefore I hope to be able to work in an interesting envoironment, where things aren't entirely static. I think that's where I would really thrive!
+                            </p>
+                        </div>
+                        <video src="bg_hero_mov.MOV" alt="moviething" playsInline muted loop autoPlay
+                        className="w-auto h-100 rounded-sm">
+                        </video>
+                    </div>
+
+                    <a className="font-medium text-primary text-center p-2 gradient-border hover:bg-backgroundthird transition-all duration-200 ease-in cursor-pointer rounded-sm text-md"
+                    href="https://www.linkedin.com/in/gustav-werdelin-677785394/" target="_blank" rel="noopener noreferrer">
+                        Get in touch with me!
+                    </a>
+                </div>
             </div>
-        </div>
     </section>
   )
 }

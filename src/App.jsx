@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <Nav />
-      <div className="p-4 ml-20 md:ml-32">
+      <div className="p-4 ml-20 md:ml-28">
         <Socials />
         <Hero />
         <Projects />

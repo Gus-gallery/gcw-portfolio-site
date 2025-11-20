@@ -55,7 +55,7 @@ const VideoCard = ({ videoSrc, link, title, description }) => {
         rounded-md gradient-border"
     >
       <div 
-        className="w-88 h-fit lg:w-xl"
+        className="w-80 h-fit md:w-lg lg:w-xl"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >

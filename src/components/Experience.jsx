@@ -42,7 +42,7 @@ const techs = [
 const Techbox = ({tech}) => (
     <div className="bg-backgroundthird inset-shadow-xl 
     rounded-md p-2 lg:p-4 aspect-square w-20 lg:w-24
-    flex flex-col justify-around items-center hover:border border-blue-200">
+    flex flex-col justify-around items-center hover:border border-secondary">
         <img 
             src={tech.image}
             alt={tech.name}
