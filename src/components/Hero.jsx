@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section id="hero">
       <div>
-        <div className="container flex flex-col p-4 mt-48 mb-36 md:mb-46">
+        <div className="container flex flex-col p-4 mt-46 mb-38 md:mb-48">
           <img src="hero_bg.png" alt="Hero bg" className="absolute top-0 left-0 object-bottom h-132 w-full object-cover opacity-25 shadow-lg"/>
 
           <div className="relative z-10 flex flex-col items-center justify-center text-center">

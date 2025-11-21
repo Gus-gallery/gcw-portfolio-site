@@ -19,7 +19,7 @@ const Nav = () => {
 
   return (
     <header className="fixed top-0 left-0 h-screen z-50">
-      <nav className="container flex flex-col min-h-screen w-22 md:w-fit bg-backgroundsecondary p-4 text-xs md:text-sm text-secondary font-regular shadow-lg">
+      <nav className="container flex flex-col h-full w-22 md:w-30 bg-backgroundsecondary p-4 text-xs md:text-sm text-secondary font-regular shadow-lg">
         <h1 className="text-center flex justify-center items-center cursor-pointer"
         onClick={() => {document.getElementById("top").scrollIntoView({ behavior: "smooth" })}}
         >gcw.portfolio</h1>
@@ -28,7 +28,7 @@ const Nav = () => {
           {label.map((label) => (
             <li 
               key={label.id}
-              className="text-primary opacity-60 cursor-pointer hover:opacity-100 duration-200 p-2 ease-in-out"
+              className="text-primary opacity-40 cursor-pointer hover:opacity-100 duration-200 p-2 ease-in-out"
             >
               <p onClick={() => handleScroll(label.id)}>
                 {label.name}
