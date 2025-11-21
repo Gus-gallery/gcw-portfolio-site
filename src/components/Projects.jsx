@@ -32,6 +32,8 @@ const videos = [
 
 const VideoCard = ({ videoSrc, link, title, description }) => {
 
+  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+
   const videoRef = useRef(null);
 
   const handleMouseEnter = () => {
@@ -55,9 +57,9 @@ const VideoCard = ({ videoSrc, link, title, description }) => {
         rounded-md gradient-border"
     >
       <div 
-        className="w-fit h-fit md:w-lg lg:w-xl"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
+        className="w-56 h-fit md:w-lg lg:w-xl"
+        onMouseEnter={!isMobile ? handleMouseEnter : undefined }
+        onMouseLeave={!isMobile ? handleMouseLeave : undefined }
       >
         <video
           ref={videoRef}
