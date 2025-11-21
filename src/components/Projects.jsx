@@ -32,8 +32,6 @@ const videos = [
 
 const VideoCard = ({ videoSrc, link, title, description }) => {
 
-  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
-
   const videoRef = useRef(null);
 
   const handleMouseEnter = () => {
@@ -58,8 +56,8 @@ const VideoCard = ({ videoSrc, link, title, description }) => {
     >
       <div 
         className="w-56 h-fit md:w-lg lg:w-xl"
-        onMouseEnter={!isMobile ? handleMouseEnter : undefined }
-        onMouseLeave={!isMobile ? handleMouseLeave : undefined }
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         <video
           ref={videoRef}
