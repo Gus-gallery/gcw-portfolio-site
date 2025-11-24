@@ -5,7 +5,7 @@ import { useGSAP } from '@gsap/react';
 
 const Light = () => {
   const blobRef = useRef(null);
-  const defaultClass = "bg-linear-to-r/srgb from-blue-200 backgroundthird opacity-25";
+  const defaultClass = "bg-linear-to-r/srgb from-blue-300 to-orange-200 opacity-10";
 
   useEffect(() => {
     const blob = blobRef.current;
@@ -14,11 +14,11 @@ const Light = () => {
       const { clientX, clientY } = event;
 
       gsap.to(blob, {
-        x: clientX - 200,
-        y: clientY - 200,
+        x: clientX - 300,
+        y: clientY - 300,
         rotation: "+=10",
         scale: 1.1,
-        duration: 1.5,
+        duration: 1.8,
         ease: "easeInOut",
       });
     };
@@ -32,7 +32,7 @@ const Light = () => {
       opacity: 0,
       ease: "easeInOut",
       duration: 3,
-    });
+    }, "+=1");;
   }, []);
 
   return (
@@ -40,8 +40,8 @@ const Light = () => {
       ref={blobRef}
       style={{
         position: "absolute",
-        width: "400px",
-        height: "400px",
+        width: "600px",
+        height: "600px",
         borderRadius: "50%",
         filter: "blur(100px)",
         zIndex: -1,
