@@ -5,20 +5,24 @@ import { useGSAP } from '@gsap/react';
 
 const Light = () => {
   const blobRef = useRef(null);
-  const defaultClass = "bg-linear-to-r/srgb from-blue-300 to-orange-200 opacity-10";
+  const blob2Ref = useRef(null);
 
   useEffect(() => {
     const blob = blobRef.current;
+    const blob2 = blob2Ref.current;
+    const blobStyles = [
+      
+    ]
 
     const handleMove = (event) => {
       const { clientX, clientY } = event;
 
       gsap.to(blob, {
-        x: clientX - 300,
-        y: clientY - 300,
+        x: clientX - 250,
+        y: clientY - 250,
         rotation: "+=10",
-        scale: 1.1,
-        duration: 1.8,
+        scale: 1.25,
+        duration: 2.5,
         ease: "easeInOut",
       });
     };
@@ -35,22 +39,46 @@ const Light = () => {
     }, "+=1");;
   }, []);
 
+  useGSAP(() => {
+    gsap.to(blob2Ref.current, {
+      opacity: 0.1,
+      x: screen.width / 2 - 150,
+      y: screen.height / 2 - 150,
+      duration: 6,
+    }, "+=3");;
+  }, []);
+
   return (
-    <div
-      ref={blobRef}
-      style={{
-        position: "absolute",
-        width: "600px",
-        height: "600px",
-        borderRadius: "50%",
-        filter: "blur(100px)",
-        zIndex: -1,
-        pointerEvents: "auto",
-        top: 0,
-        left: 0,
-      }}
-      className={defaultClass}
-    />
+    <div className="overflow-x-hidden pointer-events-none">
+      <div
+        ref={blobRef}
+        style={{
+          width: "500px",
+          height: "500px",
+          borderRadius: "50%",
+          filter: "blur(100px)",
+          zIndex: -1,
+          pointerEvents: "auto",
+          top: 0,
+          left: 0,
+        }}
+        className="fixed inset-0 bg-linear-to-r/srgb from-blue-300 to-orange-200 opacity-10"
+      />
+      <div
+        ref={blob2Ref}
+        style={{
+          width: "300px",
+          height: "300px",
+          borderRadius: "50%",
+          filter: "blur(200px)",
+          zIndex: -1,
+          pointerEvents: "auto",
+          top: 0,
+          left: 0,
+        }}
+        className="fixed inset-0 bg-linear-to-r/srgb from-red-200 to-pink-100 opacity-0"
+      />
+    </div>
   );
 };
 
