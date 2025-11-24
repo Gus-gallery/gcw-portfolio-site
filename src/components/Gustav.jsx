@@ -97,7 +97,7 @@ const Gustav = () => {
                 {renderText(
                 "Gustav C. Werdelin's development portfolio", 
                 "text-xl md:text-3xl text-primary",
-                100)}
+                400)}
             </h1>
             <p ref={subtitleRef} className="text-sm md:text-lg lg:w-1/2 font-light text-secondary">
               I'm a former gallerist with a bachelor's degree in art history, 

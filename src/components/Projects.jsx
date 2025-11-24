@@ -88,9 +88,9 @@ const Projects = () => {
 
   useGSAP(() => {
     gsap.from(videoRef.current, {
-      x: screen.width * 0.5,
+      x: screen.width * 0.2,
       opacity: 0,
-      ease: "easeOut",
+      ease: "easeInOut",
       duration: 1,
       scrollTrigger: {
         trigger: videoRef.current,
