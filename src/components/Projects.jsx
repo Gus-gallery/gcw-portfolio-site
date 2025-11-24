@@ -1,5 +1,10 @@
 import React from 'react'
 import { useRef } from 'react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/all';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const videos = [
   {
@@ -79,12 +84,29 @@ const VideoCard = ({ videoSrc, link, title, description }) => {
 
 
 const Projects = () => {
+  const videoRef = useRef(null);
+
+  useGSAP(() => {
+    gsap.from(videoRef.current, {
+      x: screen.width * 0.5,
+      opacity: 0,
+      ease: "easeOut",
+      duration: 1,
+      scrollTrigger: {
+        trigger: videoRef.current,
+        start: "top 80%",
+        once: true,
+      }
+    });
+  }, []);
+
   return (
     <section id="projects">
       <div className="mt-12 p-4">
         <h1 className="text-xl mb-2 text-primary font-medium">Recent Projects</h1>
 
         <div
+          ref={videoRef}
           className="
             flex gap-4
             overflow-x-auto flex-nowrap 

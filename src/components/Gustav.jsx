@@ -41,7 +41,7 @@ const setupTextHover = (container, type) => {
         letters.forEach((letter) => {
             const { left: l, width: w } = letter.getBoundingClientRect();
             const distance = Math.abs(mouseX - (l - left + w / 2));
-            const intensity = Math.exp(-(distance ** 2) / 20000);
+            const intensity = Math.exp(-(distance ** 2) / 6000);
 
             animateLetter(letter, min + (max - min) * intensity);
         });
@@ -82,18 +82,12 @@ const Gustav = () => {
             }
         })
 
-        tl.from(letters, {
-          opacity: 0,
-          y: 5,
-          stagger: 0.05,
-          ease: "power3.out",
-          })
-        .from(subtitle, {
+        tl.from(subtitle, {
             opacity: 0,
-            y: 5,
-            duration: 1,
+            y: 10,
+            duration: 1.5,
             ease: "power3.out",
-        }, "+=0.2");
+        }, "+=0.5");
       }, []);
 
   return (
@@ -105,7 +99,7 @@ const Gustav = () => {
                 "text-xl md:text-3xl text-primary",
                 100)}
             </h1>
-            <p ref={subtitleRef} className="text-sm md:text-lg lg:w-1/2 font-light text-primary">
+            <p ref={subtitleRef} className="text-sm md:text-lg lg:w-1/2 font-light text-secondary">
               I'm a former gallerist with a bachelor's degree in art history, 
               who loves functionalist design and minimalism in art. I do a bit of programming and web-development 
               and I'm based in Copenhagen, Denmark.
