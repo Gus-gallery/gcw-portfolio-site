@@ -69,7 +69,7 @@ const VideoCard = ({ videoSrc, link, title, description }) => {
           src={videoSrc}
           muted
           playsInline
-          className="object-contain"
+          className="opacity-0 -mb-32 md:mb-0 md:opacity-100 md:object-contain"
         />
         <div className="font-medium text-primary text-md p-4">
           {title}
