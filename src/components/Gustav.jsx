@@ -96,10 +96,10 @@ const Gustav = () => {
             <h1 ref={titleRef}>
                 {renderText(
                 "Gustav C. Werdelin's development portfolio", 
-                "text-xl md:text-3xl text-primary",
+                "text-lg sm:text-2xl md:text-3xl text-primary",
                 400)}
             </h1>
-            <p ref={subtitleRef} className="text-sm md:text-lg lg:w-1/2 font-light text-secondary">
+            <p ref={subtitleRef} className="text-sm md:text-lg md:w-2/3 lg:w-1/2 font-light text-secondary">
               I'm a former gallerist with a bachelor's degree in art history, 
               who loves functionalist design and minimalism in art. I do a bit of programming and web-development 
               and I'm based in Copenhagen, Denmark.
