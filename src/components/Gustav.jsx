@@ -92,7 +92,7 @@ const Gustav = () => {
 
   return (
     <section id="gustav">
-        <div className="p-4 flex flex-col items-center justify-center text-center h-svh">
+        <div className="p-4 flex -mt-12 md:mt-0 flex-col items-center justify-center text-center h-svh">
             <h1 ref={titleRef}>
                 {renderText(
                 "Gustav C. Werdelin's development portfolio", 
