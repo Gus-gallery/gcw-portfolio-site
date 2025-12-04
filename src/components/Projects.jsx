@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 const videos = [
   {
     id: 1,
-    title: "Peitersen Photo",
+    title: "Oskar Peitersen Photo",
     videoSrc: "/projects/ozzy.mp4",
     link: "https://gus-gallery.github.io/ozzy_home/",
     description: "Photography portfolio website made for a good friend of mine. The site is made with React, Vite and Tailwind CSS."
