@@ -9,26 +9,33 @@ gsap.registerPlugin(ScrollTrigger);
 const videos = [
   {
     id: 1,
+    title: "Peitersen Photo",
+    videoSrc: "/projects/ozzy.mp4",
+    link: "https://gus-gallery.github.io/ozzy_home/",
+    description: "Photography portfolio website made for a good friend of mine. The site is made with React, Vite and Tailwind CSS."
+  },
+  {
+    id: 2,
     title: "gw.læder",
     videoSrc: "/projects/gwlæder.mp4",
     link: "https://gus-gallery.github.io/gwl-der_site/",
     description: "Website made for my personal bespoke leather goods business, made with React, Vite and Tailwind CSS."
   },
   {
-    id: 2,
+    id: 3,
     title: "Nordfor Byggerådgivning",
     videoSrc: "/projects/nordfor.mp4",
     link: "https://gus-gallery.github.io/nordfor_byg/",
     description: "Website created for a private construction consultant using React, Vite and Tailwind CSS."
   },
   {
-    id: 3,
+    id: 4,
     title: "Movie App",
     videoSrc: "/projects/movie.mp4",
     description: "Movie app made with a search function that calls a movie database. Made with React and Tailwind CSS."
   },
   {
-    id: 4,
+    id: 5,
     title: "Macbook Landing Page",
     videoSrc: "/projects/macbook.mp4",
     description: "An Apple-like landing page for their Macbook, made with React, Tailwind, Three.js and GSAP."
