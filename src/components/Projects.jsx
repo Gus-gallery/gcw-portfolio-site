@@ -124,13 +124,13 @@ const Projects = () => {
   }, []);
 
   useGSAP(() => {
-    gsap.fromTo(anglerRef.current, {
+    gsap.from(anglerRef.current, {
       y: 50,
       opacity: 0,
       ease: "easeInOut",
       duration: 1.5,
       scrollTrigger: {
-        trigger: projectRef.current,
+        trigger: anglerRef.current,
         start: "top 80%",
         once: true,
       }
@@ -144,7 +144,7 @@ const Projects = () => {
 
         <div ref={projectRef} className="grid lg:grid-cols-2 gap-4">
           <div className="flex flex-col gap-4">
-            <div className="bg-backgroundsecondary h-full rounded-md p-4 gradient-border">
+            <div className="bg-backgroundthird h-full rounded-md p-4 gradient-border">
               <h2 className='font-medium text-primary'>
                 Anglerfish
               </h2>
@@ -152,21 +152,23 @@ const Projects = () => {
                 A project I'm currently working on, which is a social media platform for anglers to share their catches, tips, and experiences. Built with Next.js and Supabase as an easy database solution.
               </p>
             </div>
-            <img src='/projects/anglerfish_2.png' alt='Anglerfish project screenshot' className='border border-secondary gradient-border rounded-md'>
+            <img src='/projects/anglerfish_3.png' alt='Anglerfish project screenshot' className='border border-secondary gradient-border rounded-md'>
             </img>
           </div>
           <div className="flex flex-col gap-4">
             <img src='/projects/anglerfish.png' alt='Anglerfish project screenshot' className='border border-secondary gradient-border rounded-md'>
             </img>
-            <div className='bg-backgroundsecondary rounded-md p-4 gradient-border'>
-              <p className="font-light text-secondary text-center">See the project live at 
-              <a href="https://anglerfish-kappa.vercel.app" target="_blank" rel="noopener noreferrer" className='text-secondary hover:text-primary font-bold'> anglerfish-kappa.vercel.app</a>
+            <div className='bg-backgroundthird h-full rounded-md p-4 gradient-border'>
+              <p className="font-semibold text-md text-primary text-center lg:mt-5">See the project live at
+              <a href="https://anglerfish-kappa.vercel.app" target="_blank" rel="noopener noreferrer" className='text-gray-100 hover:underline underline-offset-1 hover:text-primary font-bold'> anglerfish-kappa.vercel.app</a>
               .</p>
             </div>
           </div>
         </div>
-        <img ref={anglerRef} src='/projects/anglerfish.png' alt='Anglerfish project screenshot' className='border border-secondary gradient-border rounded-md'>
-        </img>
+        <div ref={anglerRef}>
+          <img src='/projects/anglerfish_2.png' alt='Anglerfish project screenshot 3' className='border border-secondary gradient-border rounded-md mt-4'>
+          </img>
+        </div>
 
         <h1 className="text-xl mb-2 mt-24  text-primary font-medium">Recent Projects</h1>
         <div
