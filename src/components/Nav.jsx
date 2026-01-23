@@ -18,7 +18,7 @@ const Nav = () => {
   }
 
   return (
-    <header className="fixed top-0 left-0 h-screen z-50">
+    <header className="hidden sm:block fixed top-0 left-0 h-screen z-50">
       <nav className="container flex flex-col h-full w-22 md:w-30 bg-backgroundsecondary p-4 text-xs md:text-sm text-secondary font-regular shadow-lg">
         <h1 className="text-center flex justify-center items-center cursor-pointer"
         onClick={() => {document.getElementById("top").scrollIntoView({ behavior: "smooth" })}}
