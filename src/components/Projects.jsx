@@ -93,7 +93,6 @@ const VideoCard = ({ videoSrc, link, title, description }) => {
 const Projects = () => {
   const videoRef = useRef(null);
   const projectRef = useRef(null);
-  const anglerRef = useRef(null);
 
   useGSAP(() => {
     gsap.from(videoRef.current, {
@@ -123,20 +122,6 @@ const Projects = () => {
     });
   }, []);
 
-  useGSAP(() => {
-    gsap.from(anglerRef.current, {
-      y: 50,
-      opacity: 0,
-      ease: "easeInOut",
-      duration: 1.5,
-      scrollTrigger: {
-        trigger: anglerRef.current,
-        start: "top 80%",
-        once: true,
-      }
-    });
-  }, []);
-
   return (
     <section id="projects">
       <div className="mt-12 p-4">
@@ -158,16 +143,12 @@ const Projects = () => {
           <div className="flex flex-col gap-4">
             <img src='/projects/anglerfish.png' alt='Anglerfish project screenshot' className='border border-secondary gradient-border rounded-md'>
             </img>
-            <div className='bg-backgroundthird h-full rounded-md p-4 gradient-border'>
+            <div className='bg-backgroundthird hover:bg-backgroundthird/50 transition-colors duration-300 h-full rounded-md p-4 gradient-border'>
               <p className="font-semibold text-md text-primary text-center lg:mt-5">See the project live at
               <a href="https://anglerfish-kappa.vercel.app" target="_blank" rel="noopener noreferrer" className='text-gray-100 hover:underline underline-offset-1 hover:text-primary font-bold'> anglerfish-kappa.vercel.app</a>
               .</p>
             </div>
           </div>
-        </div>
-        <div ref={anglerRef}>
-          <img src='/projects/anglerfish_2.png' alt='Anglerfish project screenshot 3' className='border border-secondary gradient-border rounded-md mt-4'>
-          </img>
         </div>
 
         <h1 className="text-xl mb-2 mt-24  text-primary font-medium">Recent Projects</h1>
