@@ -71,7 +71,6 @@ const Gustav = () => {
     }, []);
 
     useGSAP(() => {
-        const letters = titleRef.current.querySelectorAll("span");
         const subtitle = subtitleRef.current;
 
         const tl = gsap.timeline({
@@ -101,7 +100,7 @@ const Gustav = () => {
             </h1>
             <p ref={subtitleRef} className="text-sm md:text-lg md:w-2/3 lg:w-1/2 font-light text-secondary">
               I'm a former gallerist with a bachelor's degree in art history, 
-              who loves functionalist design and minimalism in art. I do a bit of programming and web-development 
+              who loves functionalist design and minimalism in art. I also do interactive programming and full-stack development 
               and I'm based in Copenhagen, Denmark.
             </p>
         </div>
