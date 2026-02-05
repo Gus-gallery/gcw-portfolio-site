@@ -23,6 +23,13 @@ const videos = [
   },
   {
     id: 3,
+    title: "Stock of The Day",
+    videoSrc: "/projects/sotd.png",
+    link: "https://gus-gallery.github.io/StockOfTheDay/",
+    description: "A stock market webapp that fetches data describing the best performing big-tech stock of the day. Built with React, Vite and Tailwind CSS."
+  },
+  {
+    id: 4,
     title: "Nordfor Byggerådgivning",
     videoSrc: "/projects/nordfor.mp4",
     link: "https://gus-gallery.github.io/nordfor_byg/",
@@ -65,13 +72,17 @@ const VideoCard = ({ videoSrc, link, title, description }) => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
+        {videoSrc.endsWith('.png') ? (
+          <img src={videoSrc} alt={title} className="object-contain opacity-100 mb-8" />
+        ) : (
         <video
           ref={videoRef}
           src={videoSrc}
           muted
           playsInline
-          className="opacity-0 -mb-32 md:mb-0 md:opacity-100 md:object-contain"
+          className="-mb-32 md:mb-0 opacity-100 md:object-contain"
         />
+        )}
         <div className="font-medium text-primary text-md p-4">
           {title}
         </div>
