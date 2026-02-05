@@ -29,12 +29,6 @@ const videos = [
     description: "Website created for a private construction consultant using React, Vite and Tailwind CSS."
   },
   {
-    id: 4,
-    title: "Movie App",
-    videoSrc: "/projects/movie.mp4",
-    description: "Movie app made with a search function that calls a movie database. Made with React and Tailwind CSS."
-  },
-  {
     id: 5,
     title: "Macbook Landing Page",
     videoSrc: "/projects/macbook.mp4",
@@ -95,11 +89,12 @@ const Projects = () => {
   const projectRef = useRef(null);
 
   useGSAP(() => {
-    gsap.from(videoRef.current, {
-      x: screen.width * 0.3,
+    gsap.from(videoRef.current.children, {
+      y: 10,
       opacity: 0,
+      stagger: 0.3,
       ease: "easeInOut",
-      duration: 1.5,
+      duration: 1,
       scrollTrigger: {
         trigger: videoRef.current,
         start: "top 80%",
@@ -112,6 +107,7 @@ const Projects = () => {
     gsap.from(projectRef.current, {
       y: 50,
       opacity: 0,
+      stagger: 0.3,
       ease: "easeInOut",
       duration: 1.5,
       scrollTrigger: {
@@ -153,11 +149,11 @@ const Projects = () => {
 
         <h1 className="text-xl mb-2 mt-24  text-primary font-medium">Recent Projects</h1>
         <div
-          ref={videoRef}
           className="
             flex gap-4
             overflow-x-auto flex-nowrap 
             snap-x snap-mandatory scroll-smooth"
+            ref={videoRef}
         >
           {videos.map((v) => (
             <div key={v.id} className="snap-start rounded-md">

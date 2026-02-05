@@ -1,4 +1,8 @@
 import React from 'react'
+import { useRef } from 'react'
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/all';
 
 const techs = [
     {
@@ -53,13 +57,33 @@ const Techbox = ({tech}) => (
 
 
 const Experience = () => {
+    const boxRef = useRef(null);
+
+    useGSAP(() => {
+        gsap.from(boxRef.current.children, {
+          opacity: 0,
+          y: 10,
+          stagger: {
+            each: 0.3,
+            from: "start",
+          },
+          ease: "easeInOut",
+          duration: 1,
+          scrollTrigger: {
+            trigger: boxRef.current,
+            start: "top 80%",
+            once: true,
+          }
+        });
+      }, []);
+
     return (
         <section id="experience">
             <div className="mt-12 p-4">
                 <h1 className="text-xl text-primary font-medium mb-2">
                     Programming Experience
                 </h1>
-                <div className="container flex flex-row flex-wrap gap-4">
+                <div className="container flex flex-row flex-wrap gap-4" ref={boxRef}>
                     {techs.map(tech => (
                         <Techbox key={tech.id} className="snap-start" tech={tech} />
                     ))}
