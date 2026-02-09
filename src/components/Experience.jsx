@@ -21,13 +21,13 @@ const techs = [
     },
     {
         id: 5,
-        name: "Node.js",
-        image: "/techs/node.png"
+        name: "GSAP",
+        image: "/techs/gsap.png"
     },
     {
         id: 6,
-        name: "GSAP",
-        image: "/techs/gsap.png"
+        name: "Node.js",
+        image: "/techs/node.png"
     },
     {
         id: 7,
