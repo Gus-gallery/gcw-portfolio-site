@@ -31,11 +31,16 @@ const techs = [
     },
     {
         id: 7,
+        name: "Node.js",
+        image: "/techs/node.png"
+    },
+    {
+        id: 8,
         name: "Java",
         image: "/techs/java.png"
     },
     {
-        id: 8,
+        id: 9,
         name: "Python",
         image: "/techs/python.png"
     },
