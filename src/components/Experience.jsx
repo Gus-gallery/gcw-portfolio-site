@@ -21,8 +21,8 @@ const techs = [
     },
     {
         id: 5,
-        name: "Vite",
-        image: "/techs/vite.png"
+        name: "Node.js",
+        image: "/techs/node.png"
     },
     {
         id: 6,
@@ -31,8 +31,8 @@ const techs = [
     },
     {
         id: 7,
-        name: "Node.js",
-        image: "/techs/node.png"
+        name: "Vite",
+        image: "/techs/vite.png"
     },
     {
         id: 8,
