@@ -5,7 +5,6 @@ import { useGSAP } from '@gsap/react';
 
 const Light = () => {
   const blobRef = useRef(null);
-  const blob2Ref = useRef(null);
 
   useEffect(() => {
     const blob = blobRef.current;
@@ -35,15 +34,6 @@ const Light = () => {
     }, "+=1");;
   }, []);
 
-  useGSAP(() => {
-    gsap.to(blob2Ref.current, {
-      opacity: 0.1,
-      x: screen.width / 2 - 150,
-      y: screen.height / 2 - 150,
-      duration: 6,
-    }, "+=3");;
-  }, []);
-
   return (
     <div className="overflow-x-hidden pointer-events-none">
       <div
@@ -52,27 +42,13 @@ const Light = () => {
           width: "500px",
           height: "500px",
           borderRadius: "50%",
-          filter: "blur(100px)",
+          filter: "blur(300px)",
           zIndex: -1,
           pointerEvents: "auto",
           top: 0,
           left: 0,
         }}
         className="fixed inset-0 bg-linear-to-r/srgb from-blue-300 to-orange-200 opacity-10"
-      />
-      <div
-        ref={blob2Ref}
-        style={{
-          width: "300px",
-          height: "300px",
-          borderRadius: "50%",
-          filter: "blur(200px)",
-          zIndex: -1,
-          pointerEvents: "auto",
-          top: 0,
-          left: 0,
-        }}
-        className="fixed inset-0 bg-linear-to-r/srgb from-red-200 to-pink-100 opacity-0"
       />
     </div>
   );
