@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef} from "react";
 import React from 'react'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -9,10 +9,6 @@ const Light = () => {
 
   useEffect(() => {
     const blob = blobRef.current;
-    const blob2 = blob2Ref.current;
-    const blobStyles = [
-      
-    ]
 
     const handleMove = (event) => {
       const { clientX, clientY } = event;
