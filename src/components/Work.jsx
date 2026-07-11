@@ -6,7 +6,6 @@ const Work = () => {
             <h1 className="text-primary text-xl font-medium mt-12 -mb-2">Former Work</h1>
             
             <div className="grid grid-cols-1 lg:grid-cols-2">
-                {/*VENSTRE SIDE*/}
                 <div className="flex flex-col justify-between">
                     <div className="bg-backgroundsecondary rounded-md p-4 mt-4 gradient-border">
                         <h1 className="font-regular text-md text-primary">Co-founder of Minor Gallery</h1>
