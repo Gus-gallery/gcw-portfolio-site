@@ -13,7 +13,7 @@ function App() {
     <div>
       <Nav />
       <div className="p-4 sm:ml-22 md:ml-30">
-        <Light />
+        {/* <Light /> */}
         <Socials />
         <Gustav />
         <Projects />

@@ -8,6 +8,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 const videos = [
   {
+    id: 0,
+    title: "Anglerfish",
+    videoSrc: "/projects/anglerfish.png",
+    link: "https://anglerfish-kappa.vercel.app",
+    description: "A social media platform for anglers to share their catches, tips, and experiences."
+  },
+  {
     id: 1,
     title: "Oskar Peitersen Photo",
     videoSrc: "/projects/ozzy.mp4",
@@ -114,49 +121,10 @@ const Projects = () => {
     });
   }, []);
 
-  useGSAP(() => {
-    gsap.from(projectRef.current, {
-      y: 50,
-      opacity: 0,
-      stagger: 0.3,
-      ease: "easeInOut",
-      duration: 1.5,
-      scrollTrigger: {
-        trigger: projectRef.current,
-        start: "top 80%",
-        once: true,
-      }
-    });
-  }, []);
-
   return (
     <section id="projects">
       <div className="mt-12 p-4">
         <h1 className="text-xl mb-2 text-left text-primary font-medium">Current project</h1>
-
-        <div ref={projectRef} className="grid lg:grid-cols-2 gap-4">
-          <div className="flex flex-col gap-4">
-            <div className="bg-backgroundthird h-full rounded-md p-4 gradient-border">
-              <h2 className='font-medium text-primary'>
-                Anglerfish
-              </h2>
-              <p className="font-light text-secondary text-md">
-                A project I'm currently working on, which is a social media platform for anglers to share their catches, tips, and experiences. Built with Next.js and Supabase as an easy database solution.
-              </p>
-            </div>
-            <img src='/projects/anglerfish_3.png' alt='Anglerfish project screenshot' className='border border-secondary gradient-border rounded-md'>
-            </img>
-          </div>
-          <div className="flex flex-col gap-4">
-            <img src='/projects/anglerfish.png' alt='Anglerfish project screenshot' className='border border-secondary gradient-border rounded-md'>
-            </img>
-            <div className='bg-backgroundthird hover:bg-backgroundthird/50 transition-colors duration-300 h-full rounded-md p-4 gradient-border'>
-              <p className="font-semibold text-md text-primary text-center lg:mt-5">See the project live at
-              <a href="https://anglerfish-kappa.vercel.app" target="_blank" rel="noopener noreferrer" className='text-gray-100 hover:underline underline-offset-1 hover:text-primary font-bold'> anglerfish-kappa.vercel.app</a>
-              .</p>
-            </div>
-          </div>
-        </div>
 
         <h1 className="text-xl mb-2 mt-24  text-primary font-medium">Recent Projects</h1>
         <div
