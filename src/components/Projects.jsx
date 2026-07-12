@@ -50,7 +50,7 @@ const videos = [
   },
 ];
 
-const VideoCard = ({ videoSrc, link, title, description }) => {
+const VideoCard = ({ videoSrc, link, title }) => {
 
   const videoRef = useRef(null);
 
@@ -75,26 +75,23 @@ const VideoCard = ({ videoSrc, link, title, description }) => {
         rounded-md gradient-border"
     >
       <div 
-        className="w-56 h-fit md:w-lg lg:w-xl"
+        className="w-fit h-48 md:*:w-84 md:h-48 relative"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
         {videoSrc.endsWith('.png') ? (
-          <img src={videoSrc} alt={title} className="object-contain opacity-100 mb-8" />
+          <img src={videoSrc} alt={title} className="object-contain opcaity-60 hover:opacity-100 transition-all ease-in-out duration-300 -mb-20 md:mb-0 md:object-contain" />
         ) : (
         <video
           ref={videoRef}
           src={videoSrc}
           muted
           playsInline
-          className="-mb-32 md:mb-0 opacity-100 md:object-contain"
+          className="-mb-24 md:mb-0 opcaity-60 hover:opacity-100 transition-all ease-in-out duration-300 md:object-contain"
         />
         )}
         <div className="font-medium text-primary text-md p-4">
           {title}
-        </div>
-        <div className="font-light text-secondary text-md p-4 -mt-8">
-          {description}
         </div>
       </div>
     </a>
@@ -104,7 +101,6 @@ const VideoCard = ({ videoSrc, link, title, description }) => {
 
 const Projects = () => {
   const videoRef = useRef(null);
-  const projectRef = useRef(null);
 
   useGSAP(() => {
     gsap.from(videoRef.current.children, {
@@ -123,15 +119,11 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <div className="mt-12 p-4">
-        <h1 className="text-xl mb-2 text-left text-primary font-medium">Current project</h1>
-
+      <div className="p-4">
         <h1 className="text-xl mb-2 mt-24  text-primary font-medium">Recent Projects</h1>
         <div
           className="
-            flex gap-4
-            overflow-x-auto flex-nowrap 
-            snap-x snap-mandatory scroll-smooth"
+            flex flex-wrap gap-4"
             ref={videoRef}
         >
           {videos.map((v) => (
