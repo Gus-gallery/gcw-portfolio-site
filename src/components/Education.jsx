@@ -10,7 +10,7 @@ const Education = () => {
                 <p className="font-light text-secondary text-md">
                     Master's degree in Software Design at the IT University of Copenhagen, 2026-2028.
                 </p>
-                <h2 className="font-regular text-md text-primary">Bachelors degree</h2>
+                <h2 className="font-regular text-md text-primary mt-4">Bachelors degree</h2>
                 <p className="font-light text-secondary text-md">
                     Bachelors degree in art history from University of Copenhagen, 2022-2025.
                 </p>
